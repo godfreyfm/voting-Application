@@ -1,7 +1,7 @@
 -- Make sure to change the database name
-CREATE DATABASE IF NOT EXISTS specifyTheDatabaseName;
+CREATE DATABASE IF NOT EXISTS testdatabase;
 -- Change the database name below as well
-USE specifyTheDatabaseName;
+USE testdatabase;
 CREATE TABLE IF NOT EXISTS users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(50) NOT NULL,
@@ -16,5 +16,5 @@ CREATE TABLE IF NOT EXISTS candidates (
 );
 
 -- Make sure to edit the candidates names below
-INSERT INTO candidates (name, votes) VALUES ('INSERT_1ST_CANDIDATE_NAME', 0);
-INSERT INTO candidates (name, votes) VALUES ('INSERT_2ND_CANDIDATE_NAME', 0);
+INSERT INTO candidates (name, votes) VALUES ('Michael', 0);
+INSERT INTO candidates (name, votes) VALUES ('Science Fiction', 0);
