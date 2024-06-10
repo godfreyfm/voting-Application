@@ -7,11 +7,11 @@ FILES=(
     "/var/www/html/myapp/vote.php"
 )
 
-# Database configuration values - replace these with your actual database credentials
-DB_HOST="your_db_host"
-DB_NAME="your_db_name"
-DB_USER="your_db_username"
-DB_PASS="your_db_password"
+# Database configuration values - use environment variables set previously
+DB_HOST="terraform-20240610210130723100000002.cfecqo6ssfrf.us-east-1.rds.amazonaws.com"  # Replace with your actual DB host
+DB_NAME="testdatabase"  # Replace with your actual DB name
+DB_USER="$DB_USERNAME"  # Use the environment variable
+DB_PASS="$DB_PASSWORD"  # Use the environment variable
 
 # Loop through each file and update the database configuration
 for FILE in "${FILES[@]}"; do
